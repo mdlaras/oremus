@@ -1,9 +1,9 @@
-<div>
-  <div>
-    <div>{{ list?.name }}</div>
-    <div>{{ list?.description }}</div>
+<div class="wrapper bg-main">
+  <div class="center wrapper bg-accent">
+    <div class="h1">{{ list?.name }}</div>
+    <div class="h2">{{ list?.description }}</div>
   </div>
-  <div *ngFor="let item of list?.items">
+  <div *ngFor="let item of list?.items" class="bg-secondary">
     <div>{{ item.title }}</div>
     <div>{{ item.description }}</div>
     <div>
